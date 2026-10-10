@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Audio and Video</title>
-</head>
-
+<head><title>Audio and Video Demo</title></head>
 <body>
-
-    <h1>Audio</h1>
-
-    <audio controls>
-        <source src="music.mp3" type="audio/mpeg">
-        Your browser does not support audio.
-    </audio>
-    <br><br>
-
-    <h1>Video</h1>
-
-    <video width="500" height="300" controls>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support video.
-    </video>
-
+  <h3>Audio</h3>
+  <audio src="song.mp3" controls autoplay loop muted preload="auto">
+    Your browser does not support the audio element.
+  </audio>
+ 
+  <h3>Video</h3>
+  <video src="movie.mp4" width="400" height="250" controls autoplay loop
+         muted poster="thumbnail.jpg" preload="auto">
+    Your browser does not support the video element.
+  </video>
+  <p>Name: Gaurab Ale Magar</p>
 </body>
-
 </html>

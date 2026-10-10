@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Popup Boxes</title></head>
+<body>
+<button onclick="alert('This is an alert box.')">Show Alert</button>
+<button onclick="demoConfirm()">Show Confirm</button>
+<button onclick="demoPrompt()">Show Prompt</button>
+ 
+<script>
+function demoConfirm() {
+  var result = confirm("Do you want to continue?");
+  if (result) {
+      document.write("You clicked OK.");
+  } else {
+    document.write("You clicked Cancel.");
+  }
+}
+function demoPrompt() {
+  var name = prompt("Enter your name:", "");
+  if (name !== null) {
+    alert("Hello, " + name + "!");
+  }
+}
+</script>
+<p>Name: Gaurab Ale Magar</p>
+</body>
+</html>

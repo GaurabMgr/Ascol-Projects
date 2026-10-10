@@ -1,0 +1,10 @@
+.gallery { display: flex; flex-wrap: wrap; gap: 12px; }
+.gallery img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+.gallery img:hover { transform: scale(1.05); }

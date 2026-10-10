@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Styled Form - Focus / Validity</title>
+<style>
+  fieldset { width: 320px; padding: 15px; border: 2px solid #555; border-radius: 8px; }
+  legend { font-weight: bold; padding: 0 6px; }
+  input:focus, textarea:focus { background-color: yellow; }
+  input:invalid { color: red; border: 1px solid red; }
+  input:valid   { border: 1px solid green; }
+  label { display: block; margin-top: 8px; }
+</style>
+</head>
+<body>
+<form>
+  <fieldset>
+    <legend>Registration</legend>
+    <label>Name: <input type="text" required></label>
+    <label>Email: <input type="email" required></label>
+    <label>Password: <input type="password" minlength="6" required></label>
+    <label>Age: <input type="number" min="1" required></label>
+    <label>Gender:
+      <input type="radio" name="g" checked> M
+      <input type="radio" name="g"> F
+    </label>
+    <label>Subscribe: <input type="checkbox"></label>
+    <label>Bio: <textarea rows="3"></textarea></label>
+    <label>Resume: <input type="file"></label>
+    <input type="submit" value="Register">
+  </fieldset>
+</form>
+<p>Name: Gaurab Ale Magar</p>
+</body>
+</html>

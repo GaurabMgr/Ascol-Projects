@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>10 Input Types</title></head>
+<body>
+<form action="/submit" method="post" autocomplete="on">
+    Text: <input type="text" name="fullname" placeholder="Full name" required><br>
+    Password: <input type="password" name="pwd" minlength="6" required><br>
+    Email: <input type="email" name="email" required><br>
+    Number: <input type="number" name="age" min="1" max="100" step="1"><br>
+    Date: <input type="date" name="dob"><br>
+    Radio: <input type="radio" name="gender" value="M" checked> Male
+           <input type="radio" name="gender" value="F"> Female<br>
+    Checkbox: <input type="checkbox" name="terms" required> I accept the terms<br>
+    File: <input type="file" name="photo" accept="image/*"><br>
+    Range: <input type="range" name="volume" min="0" max="10"><br>
+    Color: <input type="color" name="favcolor" value="#ff0000"><br>
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+</form>
+<p>Name: Gaurab Ale Magar</p>
+</body>
+</html>

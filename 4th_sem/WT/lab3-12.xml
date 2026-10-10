@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Report SYSTEM "report.dtd">
+<Report>
+  <Students>
+    <Student StudId="S1">
+      <Name><First>Ram</First><Last>Shrestha</Last></Name>
+      <Status>Active</Status>
+      <CrsTaken CrsCode="C1">A</CrsTaken>
+    </Student>
+  </Students>
+  <Classes>
+    <Class>
+      <Semester>Fourth</Semester>
+      <ClassRoster Members="S1">1</ClassRoster>
+    </Class>
+  </Classes>
+  <Courses>
+    <Course CrsCode="C1">Web Technology I</Course>
+  </Courses>
+  <Author>Name: Gaurab Ale Magar</Author>
+</Report>

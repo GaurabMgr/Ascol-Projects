@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Objects and Constructors</title></head>
+<body>
+<script>
+  // Object literal
+  var student1 = { name: "Ram", age: 20, course: "BIT" };
+  document.write(student1.name + " is " + student1.age + " years old, studying " + student1.course + "<br>");
+ 
+  // Constructor function
+  function Student(name, age, course) {
+    this.name = name;
+    this.age = age;
+    this.course = course;
+    this.display = function() {
+      return this.name + " (" + this.course + ")";
+    };
+  }
+  var student2 = new Student("Sita", 21, "BSc CSIT");
+  document.write(student2.display());
+</script>
+<p>Name: Gaurab Ale Magar</p>
+</body>
+</html>

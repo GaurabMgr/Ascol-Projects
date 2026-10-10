@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library>
+  <!-- Simple element: contains only text, no children or attributes -->
+  <Location>Kathmandu</Location>
+ 
+  <!-- Complex element: contains child elements -->
+  <Book>
+    <Title>Web Technologies</Title>
+    <Author>Jeffrey C. Jackson</Author>
+    <Year>2006</Year>
+  </Book>
+ 
+  <!-- Complex element: contains an attribute AND child elements -->
+  <Book isbn="978-0-13-185603-2">
+    <Title>An Introduction to XML</Title>
+    <Author>Anders M&#248;ller</Author>
+  </Book>
+  <author>Name: Gaurab Ale Magar</author>
+</Library>

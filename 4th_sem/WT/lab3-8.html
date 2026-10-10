@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Events</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<button id="btn">Click Me</button>
+<div id="hoverbox" style="width:150px;height:60px;background:lightblue;">Mouse over me</div>
+<input type="text" id="key">
+<form id="myform"><input type="text" name="q"><input type="submit" value="Go"></form>
+<p id="log"></p>
+ 
+<script>
+$(document).ready(function() {
+  $("#btn").click(function() {
+    $("#log").text("Button was clicked.");
+  });
+  $("#hoverbox").mouseout(function() {
+    $("#log").text("Mouse left the box.");
+  });
+  $("#key").keyup(function() {
+    $("#log").text("Key released. Current value: " + $(this).val());
+  });
+  $("#myform").submit(function(e) {
+    e.preventDefault();
+    $("#log").text("Form submit intercepted - no page reload.");
+  });
+});
+</script>
+<p>Name: Gaurab Ale Magar</p>
+</body>
+</html>

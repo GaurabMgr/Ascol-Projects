@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Try-Catch Demo</title></head>
+<body>
+<script>
+  function safeDivide(a, b) {
+    try {
+      if (b === 0) {
+        throw new Error("Division by zero is not allowed");
+      }
+          document.write("Result: " + (a / b) + "<br>");
+        } catch (err) {
+          document.write("Error caught: " + err.message + "<br>");
+    } finally {
+      document.write("Division attempt finished.<br>");
+    }
+  }
+ 
+  safeDivide(10, 2);
+  safeDivide(10, 0);
+</script>
+<p>Name: Gaurab Ale Magar</p>
+</body>
+</html>

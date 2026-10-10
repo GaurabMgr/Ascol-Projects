@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><title>Event Handling in JavaScript</title></head>
+<body>
+<!-- Method 1: inline HTML attribute -->
+<button onclick="alert('Inline handler clicked')">Inline</button>
+ 
+<!-- Method 2: DOM property -->
+<button id="btn2">DOM property</button>
+ 
+<!-- Method 3: addEventListener (preferred, supports multiple handlers) -->
+<button id="btn3">addEventListener</button>
+ 
+<script>
+  document.getElementById("btn2").onclick = function() {
+    alert("DOM property handler clicked");
+  };
+ 
+  document.getElementById("btn3").addEventListener("click", function() {
+    alert("First addEventListener handler");
+  });
+  document.getElementById("btn3").addEventListener("click", function() {
+    alert("Second addEventListener handler");
+  });
+</script>
+<p>Name: Gaurab Ale Magar</p>
+</body>
+</html>

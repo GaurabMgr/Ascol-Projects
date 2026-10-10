@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>2D Array in a Table</title></head>
+<body>
+<table border="1" id="tbl"></table>
+<script>
+  // Arrays can be created with array literals [ ], or with new Array()
+  var marks = [
+    ["Ram", 72, 65],
+    ["Sita", 80, 78],
+    ["Hari", 55, 60]
+  ];
+ 
+  var html = "<tr><th>Name</th><th>Theory</th><th>Practical</th></tr>";
+  for (var i = 0; i < marks.length; i++) {
+    html += "<tr>";
+    for (var j = 0; j < marks[i].length; j++) {
+      html += "<td>" + marks[i][j] + "</td>";
+    }
+    html += "</tr>";
+  }
+  document.getElementById("tbl").innerHTML = html;
+</script>
+<p>Name: Gaurab Ale Magar</p>
+</body>
+</html>

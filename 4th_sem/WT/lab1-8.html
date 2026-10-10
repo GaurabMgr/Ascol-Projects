@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Relative URLs vs Absolute URLs</title>
-    </head>
-    <body>
-        <h3>Absolute URL</h3>
-        <a href="https://google.com">Visit Google</a>
-        <h3>Relative URL</h3>
-        <a href="pages/about.html">Visit About Page</a>
-    </body>
+<head>
+  <title>Absolute vs Relative URL</title>
+</head>
+<body>
+  <!-- Absolute URL: full address, works from any page, any location -->
+  <a href="https://www.tu.edu.np/about.html">About TU (Absolute URL)</a><br>
+ 
+  <!-- Relative URL: path relative to the CURRENT page's location -->
+  <a href="about.html">About (Relative - same folder)</a><br>
+  <a href="pages/gallery.html">Gallery (Relative - sub-folder)</a><br>
+  <a href="../index.html">Home (Relative - parent folder)</a>
+  <p>Name: Gaurab Ale Magar</p>
+</body>
 </html>

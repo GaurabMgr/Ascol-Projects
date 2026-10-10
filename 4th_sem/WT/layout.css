@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 80px);
+  gap: 4px;
+}
+.grid > div { border: 1px solid #ccc; padding: 10px; }
+.header  { background: #2563eb; color: white; }
+.nav     { background: #f3f4f6; }
+.footer  { background: #1f2937; color: white; }
+.grid a  { color: inherit; margin-right: 10px; text-decoration: none; }
+.grid a:hover { text-decoration: underline; }

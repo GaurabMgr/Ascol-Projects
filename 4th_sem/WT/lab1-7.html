@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Image as list item.</title>
-    </head>
-    <body>
-        <ul>
-            <li><img src="image1.png" height="20" width="20">HTML</li>
-            <li><img src="image2.png" height="20" width="20">CSS</li>
-            <li><img src="image3.png" height="20" width="20">JavaScript</li>
-            <li><img src="image4.png" height="20" width="20">XML</li>
-        </ul>    
-    </body>
+<head>
+  <title>Image Bullets</title>
+  <style>
+    ul.img-list { list-style: none; padding-left: 0; }
+    ul.img-list li { display: flex; align-items: center; margin-bottom: 6px; }
+    ul.img-list img { width: 16px; height: 16px; margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <ul class="img-list">
+    <li><img src="bullet.png" alt="bullet">HTML</li>
+    <li><img src="bullet.png" alt="bullet">CSS</li>
+    <li><img src="bullet.png" alt="bullet">JavaScript</li>
+  </ul>
+  <br><p>Name: Gaurab Ale Magar</p>
+</body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom List Markers</title>
+<style>
+  ul.devices {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul.devices li::before {
+    content: "\1F5A5  ";   /* a generic device-like symbol as a custom marker */
+    margin-right: 6px;
+  }
+  ul.devices li {
+    padding: 4px 0;
+    font-family: Arial;
+  }
+</style>
+</head>
+<body>
+<ul class="devices">
+  <li>Mouse</li>
+  <li>Keyboard</li>
+  <li>Monitor</li>
+  <li>Printer</li>
+  <li>Touchpad</li>
+</ul>
+<p>Name: Gaurab Ale Magar</p>
+</body>
+</html>

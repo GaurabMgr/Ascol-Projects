@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Nested Table</title>
-        <style>
-            .box {
-            position: relative;
-            top: 50px;
-            left: 50px;
-        }
-        </style>
-    </head>
-    <body>
-        <div class="box">
-        <table border="1">
-            <tr>
-                <th colspan="2">Student Information</th>
-            </tr>
-            <tr>
-                <td rowspan="2">Student</td>
-                <td>
-                    <table border="1">
-                        <tr>
-                            <th>Name</th>
-                            <th>Age</th>    
-                        </tr>
-                        <tr>
-                            <td>Gaurab</td>
-                            <td>20</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>BIT student</td>
-            </tr>
+<head><title>Nested Table with Rowspan/Colspan</title></head>
+<body>
+<table border="1" cellpadding="8">
+    <tr>
+      <th rowspan="2">Department</th>
+      <th colspan="2">Semester Marks</th>
+    </tr>
+    <tr>
+      <th>Theory</th>
+      <th>Practical</th>
+    </tr>
+    <tr>
+      <td>BIT</td>
+      <td>
+        <!-- nested table inside this cell -->
+        <table border="1" cellpadding="4">
+          <tr><td>Web Tech</td><td>72</td></tr>
+          <tr><td>SAD</td><td>68</td></tr>
         </table>
-    </div>
-    </body>
+      </td>
+      <td>45</td>
+    </tr>
+</table>
+<p>Name: Gaurab Ale Magar</p>
+</body>
 </html>

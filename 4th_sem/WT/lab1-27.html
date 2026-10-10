@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Job Application Form</title></head>
+<body>
+<form action="/apply" method="post" enctype="multipart/form-data">
+  Full Name: <input type="text" name="name" required><br><br>
+ 
+    Position Applied For:
+    <select name="position" required>
+      <option value="">--Select--</option>
+      <option value="developer">Web Developer</option>
+      <option value="designer">UI/UX Designer</option>
+      <option value="tester">QA Tester</option>
+    </select><br><br>
+ 
+    Cover Letter:<br>
+    <textarea name="coverletter" rows="5" cols="40" placeholder="Why should we hire you?"></textarea><br><br>
+ 
+  Upload Resume (PDF): <input type="file" name="resume" accept=".pdf" required><br><br>
+ 
+    <input type="submit" value="Submit Application">
+</form>
+<p>Name: Gaurab Ale Magar</p>
+</body>
+</html>
