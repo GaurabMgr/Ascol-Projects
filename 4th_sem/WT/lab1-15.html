@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nested Table</title>
+        <style>
+            .box {
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+        <table border="1">
+            <tr>
+                <th colspan="2">Student Information</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Student</td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>    
+                        </tr>
+                        <tr>
+                            <td>Gaurab</td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>BIT student</td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>

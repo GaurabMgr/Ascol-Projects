@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice</title>
+    </head>
+    <body onload="alert('page loaded')">
+
+        <button onclick="doSomething()">click me</button>
+        <p id="test">Hello</p>
+        <script>
+            function doSomething()
+            {
+                document.getElementById("test").innerHTML="BYE";
+            };
+        </script>
+        <!--
+        <form action="action.php" method="POST">
+            <label for="fname">First Name: </label>
+            <input type="text" required placeholder="John" id="fname" name="fname">
+            <br>
+            <label for="lname">Last Name: </label>
+            <input type="text" placeholder="Doe" id="lname" name="lname">
+            <br><input type="reset"><br>
+            <input type="submit">
+            <input type="password" id="pass" name="pass" maxlength="12>">
+        </form>
+         -->
+        <<!--button onclick="alert('Hello')">CLICK ME</button>
+        <canvas id="myCanvas" width="300" height="200"></canvas>
+
+<script>
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "blue";
+    ctx.fillRect(50, 50, 100, 80);
+</script>
+-->
+<script>
+    let name=prompt('your name');
+    alert('hello, '+name);
+
+</script>
+    </body>
+</html>
